@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png" type="image/png" />
+    <title>Typing Speed Master</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container mainDiv">
+        <div class="centerDiv">
+            <h1 class="text-center text-white mb-4">Welcome to Typing Speed Master</h1>
+            <h2 id="msg" class="text-center"></h2>
+            <textarea id="mywords" cols="100" rows="10" class="form-control mb-3" disabled></textarea>
+            <select id="modeSelect" class="form-select mb-3">
+                <option value="" disabled selected>Select Mode</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <input type="number" id="timerInput" class="form-control mb-3" placeholder="Enter time in minutes" min="1" disabled>
+            <button id="btn" class="btn btn-primary" disabled>Start</button>
+            <h3 id="timer" class="mt-3">Timer: <span id="timerValue">0</span> seconds</h3>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
